@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Taiwind project</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="py-4 shadow-sm bg-white">
+    <div class="container flex items-center justify-between">
+      <!-- logo -->
+      <a href="#">
+        <h1 class="text-4xl text-black">BD<span class="text-red-700">SHOP</span></h1>
+      </a>
+
+      <!-- searchbar -->
+      <div class="w-full max-w-xl relative flex">
+        <span class="absolute left-4 top-3 text-lg text-gray-600">
+          <i class="fas fa-search"></i>
+        </span>
+        <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="search">
+        <button class="bg-primary border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+      </div>
+      <!-- icons -->
+      <div class="flex items-center space-x-4">
+        <a href="wishlist.html" class="text-center text-gray-700 hover:text-primary transition relative">
+          <div class="text-2xl">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="text-xs leading-3">Wish List</div>
+          <span class="absolute -right-1 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
+          
+        </a>
+        <a href="cart.html" class="text-center text-gray-700 hover:text-primary transition relative">
+          <div class="text-2xl">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <div class="text-xs leading-3">Cart</div>
+          <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">0</span>
+          
+        </a>
+        <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+          <div class="text-2xl">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="text-xs leading-3">Account</div>
+          
+          
+        </a>
+      </div>
+    </div>
+  </header>
+<!-- header end -->
+
+<!-- navbar -->
+<nav class="bg-gray-800">
+<div class="container flex">
+  <!-- all category -->
+  <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+    <span class="text-white">
+      <i class="fas fa-bars"></i>
+    </span>
+    <span class="capitalize ml-2 text-white">All Categories</span>
+    <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-100 invisible group-hover:visible">
+      <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+        <img src="https://img.freepik.com/free-psd/realistic-modern-double-bedroom-with-furniture-frame_176382-437.jpg?w=740&t=st=1677348308~exp=1677348908~hmac=69a6aec2b3cfafd48caf32520ddd710cfacad42ba7042d2a58fa0542452fc84c" alt="img" class="w-5 h-5 object-contain">
+        <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+      </a>
+      <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+        <img src="https://img.freepik.com/free-psd/two-seater-gray-sofa-with-two-cushions-isolated_176382-98.jpg?w=740&t=st=1677347271~exp=1677347871~hmac=a83646c75b2e37d26288bc33068ea604826cc6cf7fe01ef22f1f568b2c58c362" alt="img" class="w-5 h-5 object-contain">
+        <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+      </a>
+      <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+        <img src="https://img.freepik.com/free-photo/3d-rendering-business-meeting-working-room-office-building_105762-1972.jpg?w=740&t=st=1677348354~exp=1677348954~hmac=b4c1d2ec853634a3d607756f4d49a3c877b42e45f256a1d443d63e17719cfc1a" alt="img" class="w-5 h-5 object-contain">
+        <span class="ml-6 text-gray-600 text-sm">Office</span>
+      </a>
+      <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+        <img src="https://img.freepik.com/free-photo/street-restaurant-old-town-regensburg-germany_1127-3371.jpg?w=740&t=st=1677348432~exp=1677349032~hmac=f9d8e3c9661e72a4259c2d7765669e75ad983c01b452903ef12850d8a0ee8637" alt="img" class="w-5 h-5 object-contain">
+        <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+      </a>
+      <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+        <img src="https://img.freepik.com/free-vector/realistic-black-white-bedroom_52683-75121.jpg?w=740&t=st=1677348474~exp=1677349074~hmac=2079267b2aea26f2ab8a9b662e2964b77f7782d9ca759c57fff8512ae0bf7a8b" alt="img" class="w-5 h-5 object-contain">
+        <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+      </a>
+      <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+        <img src="https://img.freepik.com/premium-photo/luxurious-hotel-restaurant-modern-style-with-colorful-furniture-3d-rendering_295714-3973.jpg?w=740" alt="img" class="w-5 h-5 object-contain">
+        <span class="ml-6 text-gray-600 text-sm">Dining</span>
+      </a>
+
+    </div>
+    
+  </div>
+  <!-- all category end -->
+
+  <!-- navbar links -->
+  <div class="flex items-center justify-between flex-grow pl-12">
+    <div class="flex items-center space-x-6 capitalize">
+      <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
+      <a href="shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+      <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
+      <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
+
+
+
+    </div>
+    <a href="login.html" class="text-gray-200 hover:text-white transition">Login/Register</a>
+  </div>
+  
+
+</div>
+</nav>
+<!-- navbar end -->
+
+<!-- breadcrumb -->
+<div class="container py-4 flex items-center gap-3">
+  <a href="index.html" class="text-primary text-base">
+    <i class="fas fa-home"></i>
+  </a>
+  <span class="text-sm text-gray-400">
+    <i class="fas fa-chevron-right"></i>
+  </span>
+  <p class="text-gray-600 font-medium">My Account</p>
+</div>
+<!-- breadcrumb end -->
+
+<!-- Account wrapper -->
+<div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16 sm:flex">
+
+    <!-- sidebar -->
+    <div class="col-span-3 w-max">
+        <!-- account profile -->
+        <div class="flex px-4 py-3 shadow items-center gap-4">
+            <div class="flex-shrink-0">
+                <img src="https://scontent.fdac96-1.fna.fbcdn.net/v/t39.30808-6/275049204_295861625994951_3541209515909905054_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=109&ccb=1-7&_nc_sid=a4a2d7&_nc_eui2=AeFIFGGGzNS4bLl4FMAt6vHYLTS7IHtu9f4tNLsge271_tn9uBIfzK091XUuLXKCQ7_degO_W5EOx76kRlP6HwPp&_nc_ohc=s8IbGNHv1CQAX9Q5WEj&_nc_zt=23&_nc_ht=scontent.fdac96-1.fna&oh=00_AfCUGaG8vMTbaBRdtaELysrWSpe4HUKYqB3RjGfbn9Bhjw&oe=6401CA7D" alt="" class="rounded-full w-14 h-14 border border-gray-200  object-cover">
+            </div>
+            <div class="flex-grow">
+                <p class="text-gray-600">Hello</p>
+                <h4 class="text-gray-900 font-medium">
+                    Masud Rana
+                </h4>
+            </div>
+        </div>
+        <!-- account profile end -->
+
+        <!-- profile links -->
+        <div class="mt-6 bg-white shadow rounded p-4 divide-y divide-gray-200 space-y-4 text-gray-600">
+            <!-- single link -->
+            <div class="space-y-1 pl-8">
+                <a href="#" class="relative text-primary block font-medium capitalize">
+                    <span class="absolute -left-8 top-0 text-base">
+                        <i class="far fa-address-card"></i>
+                    </span>
+                    Manage account
+                </a>
+                <a href="profileinfo.html" class="relative  block capitalize hover:text-primary transition">
+                    Profile Info
+                </a>
+                <a href="#" class="relative  block capitalize hover:text-primary transition">
+                    Manage Address
+                </a>
+                <a href="#" class="relative  block capitalize hover:text-primary transition">
+                    Change Password
+                </a>
+                
+            </div>
+            <!-- single link end -->
+            <!-- single link -->
+            <div class="space-y-1 pl-8 pt-4">
+                <a href="#" class="relative hover:text-primary block font-medium capitalize">
+                    <span class="absolute -left-8 top-0 text-base">
+                        <i class="fa-solid fa-gift"></i>
+                    </span>
+                    My Order History
+                </a>
+                <a href="#" class="relative  block capitalize hover:text-primary transition">
+                    My Returns
+                </a>
+                <a href="#" class="relative  block capitalize hover:text-primary transition">
+                    My Cancellation
+                </a>
+                <a href="#" class="relative  block capitalize hover:text-primary transition">
+                    May Reviews
+                </a>
+                
+            </div>
+            <!-- single link end -->
+
+             <!-- single link -->
+             <div class="space-y-1 pl-8 pt-4">
+                <a href="#" class="relative hover:text-primary block font-medium capitalize">
+                    <span class="absolute -left-8 top-0 text-base">
+                        <i class="fa-solid fa-credit-card-front"></i>
+                    </span>
+                    Payment Methods
+                </a>
+                <a href="#" class="relative  block capitalize hover:text-primary transition">
+                    Voucher
+                </a>
+                
+            </div>
+            <!-- single link end -->
+            <!-- single link -->
+            <div class="space-y-1 pl-8 pt-4">
+                <a href="wishlist.html" class="relative hover:text-primary block font-medium capitalize">
+                    <span class="absolute -left-8 top-0 text-base">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+                    My Wishlist
+                </a>
+                
+            </div>
+            <!-- single link end -->
+            <!-- single link -->
+            <div class="space-y-1 pl-8 pt-4">
+                <a href="#" class="relative hover:text-primary block font-medium capitalize">
+                    <span class="absolute -left-8 top-0 text-base">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+                    Logout
+                </a>
+                
+            </div>
+            <!-- single link end -->
+        </div>
+        <!-- profile links end -->
+
+    </div>
+    <!-- sidebar end -->
+
+    <!-- profile info -->
+    <div class="col-span-9 lg:grid grid-cols-3 gap-4 sm:divide-y-2">
+        <!-- single card -->
+        <div class="shadow rounded bg-white px-4 pb-8">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-medium text-gray-800 text-lg">Personal Profile</h3>
+                <a href="#" class="text-primary">Edit</a>
+            </div>
+            <div class="space-y-1">
+                <h4 class="text-gray-700 font-medium">Masud Rana</h4>
+                <p class="text-gray-800">example@gmail.com</p>
+                <p class="text-gray-800">12343344543</p>
+
+            </div>
+        </div>
+        <!-- single card end -->
+        <!-- single card -->
+        <div class="shadow rounded bg-white px-4 pb-8">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-medium text-gray-800 text-lg">Shipping Address</h3>
+                <a href="#" class="text-primary">Edit</a>
+            </div>
+            <div class="space-y-1">
+                <h4 class="text-gray-700 font-medium">Masud Rana</h4>
+                <p class="text-gray-800">Sopura, Rajshahi</p>
+                <p class="text-gray-800">12343344543</p>
+
+            </div>
+        </div>
+        <!-- single card end -->
+        <!-- single card -->
+        <div class="shadow rounded bg-white px-4 pb-8">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-medium text-gray-800 text-lg">Billing Address</h3>
+                <a href="#" class="text-primary">Edit</a>
+            </div>
+            <div class="space-y-1">
+                <h4 class="text-gray-700 font-medium">Masud Rana</h4>
+                <p class="text-gray-800">Sopura, Rajshahi</p>
+                <p class="text-gray-800">12343344543</p>
+
+            </div>
+        </div>
+        <!-- single card end -->
+    </div>
+    <!-- profile info -->
+</div>
+<!-- Account wrapper end -->
+
+<!-- footer section -->
+<footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+    <div class="container grid grid-cols-3">
+      <!-- footer text -->
+      <div class="col-span-1 space-y-6">
+        <h1 class="text-4xl text-black">RAF<span class="text-red-700">CART</span></h1>
+        <p class="text-gray-500">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dignissimos?
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+     
+      <!-- footer text end -->
+      
+      <!-- footer links -->
+      <div class="col-span-2 grid grid-cols-2 gap-8">
+        <div class="grid grid-cols-2 gap-8">
+        <div>
+            <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+          <div class="mt-4 space-y-4">
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">support</h3>
+        <div class="mt-4 space-y-4">
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Docs</a>
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
+        </div>
+      </div>
+      </div>
+      <div class="grid grid-cols-2 gap-8">
+        <div>
+            <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Company</h3>
+          <div class="mt-4 space-y-4">
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">absolute</a>
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Blog</a>
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Jobs</a>
+            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Press</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Legal</h3>
+        <div class="mt-4 space-y-4">
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Claim</a>
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Privacy</a>
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Policy</a>
+          <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Terms</a>
+        </div>
+      </div>
+      </div>
+      <!-- footer links end -->
+    </div>
+    </footer>
+    <!-- footer section end -->
+    
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+          <p class="text-white">© RAFCART - All Rights Reserved</p>
+          <div class="flex items-center justify-center text-2xl bg-transparent space-x-3">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-amazon-pay"></i>
+            <i class="fa-brands fa-cc-discover"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+          </div>
+        </div>
+      </div>
+    <!-- copyright end -->
+</body>
+</html>
